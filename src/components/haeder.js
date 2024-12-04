@@ -55,7 +55,7 @@ export const Header = () => {
 
                     {/* Navigation Menu */}
                     <nav className="hidden md:flex space-x-10">
-                        <a href="https://github.com/mggger/Calorie-Calculator" target="_blank" rel="noopener noreferrer"
+                        <a href="https://github.com/YugdeepParihar/calories" target="_blank" rel="noopener noreferrer"
                            className="text-gray-700 hover:text-gray-900">
                             <svg className="h-6 w-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
                                 <path fillRule="evenodd" clipRule="evenodd"
