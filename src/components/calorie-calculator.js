@@ -298,20 +298,27 @@ const FAQSection = () => {
     ];
 
     return (
-        <div className="mt-8">
-            <div className="divider"></div>
-            <h2 className="text-xl font-semibold mb-4">Frequently Asked Questions</h2>
-            {faqs.map((faq, index) => (
-                <div key={index} className="collapse collapse-plus border border-base-300 bg-base-100 rounded-box mb-2">
-                    <input type="checkbox" className="peer" />
-                    <div className="collapse-title text-lg font-medium">
-                        {faq.question}
-                    </div>
-                    <div className="collapse-content text-base">
-                        <p>{faq.answer}</p>
-                    </div>
-                </div>
-            ))}
-        </div>
+       
+<div className="mt-8">
+  <div className="border-t-4 border-blue-500 my-6"></div>
+  <h2 className="text-3xl font-extrabold text-blue-600 mb-6 dark:text-blue-300">
+    Frequently Asked Questions
+  </h2>
+  {faqs.map((faq, index) => (
+    <div
+      key={index}
+      className="collapse collapse-plus border-2 border-blue-300 bg-blue-50 rounded-lg mb-4 shadow-lg dark:border-blue-600 dark:bg-gray-800"
+    >
+      <input type="checkbox" className="peer" />
+      <div className="collapse-title text-2xl font-bold text-blue-800 dark:text-blue-200 peer-hover:text-blue-600">
+        {faq.question}
+      </div>
+      <div className="collapse-content text-lg text-gray-700 dark:text-gray-300 p-4">
+        <p>{faq.answer}</p>
+      </div>
+    </div>
+  ))}
+</div>
+
     );
 };
